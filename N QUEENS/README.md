@@ -1,6 +1,6 @@
 #  Solucionador N-Reinas: Comparativa de Algoritmos Bio-Inspirados
 
-Este proyecto implementa, analiza y compara dos algoritmos metaheurísticos para resolver el clásico problema de las **16 Reinas (N-Queens Problem)**:
+Este proyecto implementa, analiza y compara dos algoritmos metaheurísticos para resolver el clásico problema de las **8 Reinas (N-Queens Problem)** pero en este caso se tomará como referencia **16 Reinas (N-Queens Problem)**:
 1.  **Algoritmo Genético (GA):** Implementado utilizando la librería `DEAP`.
 2.  **Algoritmo de Luciérnaga (Firefly Algorithm):** Implementación propia adaptada para espacios discretos.
 
