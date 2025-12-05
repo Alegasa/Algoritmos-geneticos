@@ -67,7 +67,7 @@ Logramos demostrar que la implementación en hardware real superó las expectati
 
 | Entorno de Prueba | Método de Imagen | Precisión Obtenida | Notas |
 | :--- | :--- | :--- | :--- |
-| **Edge Impulse (Web)** | Squash / Resize | **81.33%** | Estimación conservadora con datos de prueba. |
+| **Edge Impulse (Web)** | Fit shortest axis | **81.33%** | Estimación conservadora con datos de prueba. |
 | **ESP32 Real (Python)** | **Center Crop (Optimizado)** | **88.14%** | Validación con miles de imágenes reales. |
 
 > **Conclusión:** La optimización geométrica ("Center Crop") implementada en el código final mejoró la capacidad del modelo en un **~7%** respecto a la simulación inicial, demostrando la importancia del pre-procesamiento correcto en TinyML.
