@@ -59,7 +59,7 @@ Durante el desarrollo, descubrimos discrepancias críticas entre la teoría (sim
 ### 2. Formato de Color (RGB vs. RGBA)
 La librería de inferencia en el ESP32 calcula los offsets de memoria en bloques de 4 bytes (`offset * 4`). Las imágenes enviadas originalmente en RGB (3 bytes) causaban desbordamientos de memoria y corrupción visual. Se corrigió el script de Python para enviar `RGBA`, sincronizando la comunicación.
 
-## 📊 Resultados y Validación
+## Resultados y Validación
 
 Logramos demostrar que la implementación en hardware real superó las expectativas teóricas de la plataforma de entrenamiento.
 
@@ -73,11 +73,12 @@ Logramos demostrar que la implementación en hardware real superó las expectati
 > **Conclusión:** La optimización geométrica ("Center Crop") implementada en el código final mejoró la capacidad del modelo en un **~7%** respecto a la simulación inicial, demostrando la importancia del pre-procesamiento correcto en TinyML.
 
 ### Matriz de Confusión Final (Hardware)
-*(Ver imagen adjunta en repositorio `img/matriz_final.png`)*
+
+![Matriz de Confusión (Images/matriz_confusion.png)]
 
 Se observa una precisión casi perfecta en los extremos (Clases 75, 95, 165, 200). La mayor parte del error residual (12%) se concentra lógicamente entre las clases vecinas 115 y 140, que poseen características visuales extremadamente similares.
 
-## 💻 Instrucciones de Uso
+## Instrucciones de Uso
 
 ### Requisitos
 * Python 3.x (`pip install flask pillow`)
@@ -97,7 +98,7 @@ Se observa una precisión casi perfecta en los extremos (Clases 75, 95, 165, 200
     * Pegar la IP del servidor en la variable `server_ip` del código Arduino y volver a subir si es necesario.
     * Abrir el Monitor Serie para ver el progreso.
 
-## 🤝 Créditos
+## Créditos
 
 * **Plataforma de Entrenamiento:** [Edge Impulse](https://www.edgeimpulse.com/)
 * **Hardware:** Espressif Systems (ESP32)
