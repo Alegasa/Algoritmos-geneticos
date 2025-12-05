@@ -67,14 +67,18 @@ Logramos demostrar que la implementación en hardware real superó las expectati
 
 | Entorno de Prueba | Método de Imagen | Precisión Obtenida | Notas |
 | :--- | :--- | :--- | :--- |
-| **Edge Impulse (Web)** | Squash / Resize | **81.33%** | Estimación conservadora con datos de prueba. |
+| **Edge Impulse (Web)** | Fit shortest axis | **81.33%** | Estimación conservadora con datos de prueba. |
 | **ESP32 Real (Python)** | **Center Crop (Optimizado)** | **88.14%** | Validación con miles de imágenes reales. |
 
 > **Conclusión:** La optimización geométrica ("Center Crop") implementada en el código final mejoró la capacidad del modelo en un **~7%** respecto a la simulación inicial, demostrando la importancia del pre-procesamiento correcto en TinyML.
 
 ### Matriz de Confusión Final (Hardware)
 
+<<<<<<< HEAD
 ![Matriz de Confusión](Images/matriz_confusion.png)
+=======
+![Matriz de Confusión](Images/matriz-confusion.png)
+>>>>>>> 2862796a4d95987a52e9086de7adcf43fdc42966
 
 Se observa una precisión casi perfecta en los extremos (Clases 75, 95, 165, 200). La mayor parte del error residual (12%) se concentra lógicamente entre las clases vecinas 115 y 140, que poseen características visuales extremadamente similares.
 
