@@ -6,6 +6,12 @@ Este proyecto implementa, analiza y compara dos algoritmos metaheurísticos para
 
 El objetivo principal es evaluar la eficiencia en **tiempo de ejecución**, **convergencia** y **precisión** de ambas estrategias para encontrar una configuración donde ninguna reina se ataque entre sí.
 
+### Ejemplo de Solución (Tablero 16x16)
+![Solución 16 Reinas](Images/tablero.png)
+
+### Gráfica Comparativa entre los dos algortimos
+![Solución 16 Reinas](Images/grafica.png)
+
 ##  Estructura del Proyecto
 
 * `n_queens.py`: Implementación del **Algoritmo Genético** (DEAP).

@@ -71,7 +71,7 @@ class NQueensProblem:
         ax.imshow(board, interpolation='none', cmap=mpl.colors.ListedColormap(['#ffc794', '#4c2f27']))
 
         # read the queen image thumbnail and give it a spread of 70% of the square dimensions:
-        queenThumbnail = plt.imread("queen-thumbnail.png")
+        queenThumbnail = plt.imread("N QUEENS\queen-thumbnail.png")
         thumbnailSpread = 0.70 * np.array([-1, 1, -1, 1]) / 2  # spread is [left, right, bottom, top]
 
         # iterate over the queen positions - i is the row, j is the column:
