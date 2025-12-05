@@ -11,7 +11,7 @@ El objetivo principal es evaluar la eficiencia en **tiempo de ejecución**, **co
 
 ### Gráfica Comparativa entre los dos algortimos
 ![Solución 16 Reinas](Images/grafica.png)
-
+ 
 ##  Estructura del Proyecto
 
 * `n_queens.py`: Implementación del **Algoritmo Genético** (DEAP).
