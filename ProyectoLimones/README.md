@@ -74,11 +74,7 @@ Logramos demostrar que la implementación en hardware real superó las expectati
 
 ### Matriz de Confusión Final (Hardware)
 
-<<<<<<< HEAD
-![Matriz de Confusión](Images/matriz_confusion.png)
-=======
 ![Matriz de Confusión](Images/matriz-confusion.png)
->>>>>>> 2862796a4d95987a52e9086de7adcf43fdc42966
 
 Se observa una precisión casi perfecta en los extremos (Clases 75, 95, 165, 200). La mayor parte del error residual (12%) se concentra lógicamente entre las clases vecinas 115 y 140, que poseen características visuales extremadamente similares.
 
