@@ -16,8 +16,8 @@ import queens as queens
 NUM_OF_QUEENS = 16
 
 # Genetic Algorithm constants:
-POPULATION_SIZE = 50
-MAX_GENERATIONS = 50
+POPULATION_SIZE = 60
+MAX_GENERATIONS = 60
 HALL_OF_FAME_SIZE = 30
 P_CROSSOVER = 0.9  # probability for crossover
 P_MUTATION = 0.1   # probability for mutating an individual
